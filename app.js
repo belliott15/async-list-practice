@@ -23,7 +23,7 @@ async function fetchDisplayHarryPotterCharacters(){
     const characterList = await fetchHarryPotter();
 
     for (let character of characterList){
-        const characterAndWand = renderHarryPotterCharacters(character)
+        const characterAndWand = renderHarryPotterCharacters(character);
         harryPotterEl.append(characterAndWand);
     }
 }
