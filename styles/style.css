@@ -89,3 +89,62 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+#harry-potter-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.harry-potter{
+    background-color: maroon;
+    border: 1px black solid;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.harry-potter p{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    color: yellow
+}
+
+.harry-potter h1{
+    margin: 0;
+}
+
+#candy-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.candy{
+    background-color: lightblue;
+    color: hotpink;
+    border: 1px black solid;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    height: 350px;
+    width: 200px;
+}
+
+.candy h1{
+    margin: 0 auto;
+}
+
+.candy p{
+    margin: 5px;
+}
