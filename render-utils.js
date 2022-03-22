@@ -37,8 +37,8 @@ export function renderIceCreams(iceCream){
 
     nameEl.textContent = iceCream.name;
     brandEl.textContent = iceCream.brand;
-    consistencyEl.textContent = `Consistency: ${iceCream.consistency}`;
-    sugarEl.textContent = `Sugar: ${iceCream.grams_of_sugar}grams`;
+    colorEl.textContent = `Color: ${iceCream.color}`;
+    priceEl.textContent = `Cost: $${iceCream.price}.00`;
     
     for (let flavor of iceCream.flavor){
         const li = document.createElement('li');
@@ -48,9 +48,28 @@ export function renderIceCreams(iceCream){
     }
 
     iceCreamDiv.classList.add('iceCream');
-    iceCreamDiv.append(nameEl, categoryEl, categoryEl, consistencyEl, sugarEl, flavorEl);
+    iceCreamDiv.append(nameEl, brandEl, colorEl, priceEl, flavorEl);
 
     return iceCreamDiv;
+}
+
+export function renderPokemon(pokemon){
+    const pokemonDiv = document.createElement('div');
+    const nameEl = document.createElement('h1');
+    const typeEl = document.createElement('h3');
+    const colorEl = document.createElement('p');
+    const candyEl = document.createElement('p');
+
+    nameEl.textContent = pokemon.Name;
+    typeEl.textContent = pokemon.type;
+    colorEl.textContent = `Color: ${pokemon.color}`;
+    candyEl.textContent = `Favorite Candy: ${pokemon.favorite_candy}`;
+
+    pokemonDiv.style.background = pokemon.color;
+    pokemonDiv.classList.add('pokemon');
+    pokemonDiv.append(nameEl, typeEl, colorEl, candyEl);
+
+    return pokemonDiv;
 }
 
 
