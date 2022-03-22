@@ -12,7 +12,7 @@ export function renderHarryPotterCharacters(characters){
     houseEl.textContent = characters.house;
     wandMaterialEl.textContent = `Wand Material: ${characters.wand_material}`;
     wandCoreEl.textContent = `Wand Core: ${characters.wand_core}`;
-    wandLengthEl.textContent = `Wand Length: ${characters.wand_length}`;
+    wandLengthEl.textContent = `Wand Length: ${characters.wand_length} inches`;
     
     for (let character of characters.appearance_in_books){
         const li = document.createElement('li');
@@ -86,6 +86,7 @@ export function renderCandies(candy){
     categoryEl.textContent = candy.category;
     consistencyEl.textContent = `Consistency: ${candy.consistency}`;
     sugarEl.textContent = `Sugar: ${candy.grams_of_sugar}grams`;
+    flavorEl.textContent = `Flavor Profile: `;
     
     for (let flavor of candy.flavor){
         const li = document.createElement('li');
